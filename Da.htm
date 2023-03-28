@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex and grid-box</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            min-width: 80vw;
+            min-height: 10vh;
+            margin: 0 auto;
+        }
+        .left{
+            background-color: aqua;
+            min-width: 39.5vw;
+            margin-right: 0.5vw;
+        }
+        .right{
+            background-color: green;
+            flex-wrap: wrap;
+            min-width: 40vw;
+            display: flex;
+            justify-content: space-between;
+        }
+        .item{
+            min-width: 20vw;
+            margin: 0.2vh 0.2vw;
+        }
+        .item1, .item3{
+            background-color: blue;
+        }
+        .item2, .item4{
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            1
+        </div>
+        <div class="right">
+            <div class="item item1">2</div>
+            <div class="item item2">3</div>
+            <div class="item item3">4</div>
+            <div class="item item4">5</div>
+    </div>
+    </div>
+</body>
+</html>
